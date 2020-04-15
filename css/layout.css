@@ -1,0 +1,239 @@
+*{
+	margin: 0 ;  
+	padding: 0;  
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+}
+header{
+	position: relative;  
+}
+.menu-top{
+	display: flex;   
+	padding: 2.8em 0 0 0 ;   
+}
+.menu-top ul{
+	list-style: none; 
+	display: flex ;   
+}
+.menu-top ul li{
+	margin: 0 0 0 2em ;   
+	color: #ffffff; 
+	text-transform: uppercase;  
+}
+.menu-top ul li i{
+	color: #79cba8; 
+	font-size: 1.3em;   
+}
+.menu-top ul li a{
+	color: #2e2e2e; 
+	font-weight: 400;   
+}
+.menu-top ul li a:hover{
+	text-decoration: none;  
+}
+
+.btn-custom-01{
+	background: #79cba8;
+	border: 2px solid #79cba8;
+	padding: 3px 16px;
+	margin-right: 4px;
+	position: relative;
+}
+.btn-custom-01 span{
+	position: relative; 
+	color: #fff;
+    transition: .4s;   
+    text-transform: uppercase;  
+    font-size: .8em;  
+    font-weight: 500; 
+}
+.btn-custom-01::before{
+	position: absolute;  
+	border: 0; 
+	content: "";  
+    top:0 ;  
+    right: 0;  
+    height: 100% ;   
+    width: 0; 
+    background: #fff; 
+	transition: .4s;  
+}
+.btn-custom-01:hover::before{
+	width:100% ;  
+ 	left: 0; 
+}
+.btn-custom-01:hover span{
+	color: #79cba8; 
+	z-index: 2; 
+	position: relative;  
+}
+.btn-custom-02{
+	background: #ffffff;  
+	border: 2px solid #79cba8 ;   
+	padding: 3px  16px; 
+    position: relative;
+    margin-right: 4px;  
+}
+.btn-custom-02 span{
+	position: relative; 
+	color: #79cba8;
+    transition: .4s;   
+    text-transform: uppercase;  
+    font-size: .8em;  
+    font-weight: 500;  
+}
+.btn-custom-02::before{
+	position: absolute;  
+	content: "";  
+    top:0 ;  
+    left: 0;  
+    height: 100%;
+    width: 0; 
+    background: #79cba8; 
+	transition: .4s;  
+}
+.btn-custom-02:hover span{
+	color: #fff; 
+	z-index: 2; 
+	position: relative; 
+}
+.btn-custom-02:hover::before{
+	width:100% ; 
+	 
+}
+.slider-item{
+	position: relative;   
+}
+.slider-item::before{
+	position: absolute; 
+	content: ""; 
+	top: 0; 
+	left: 0;  
+	width: 40%;  
+	height: 100%;  
+	background: linear-gradient(to right , #000 , transparent);  
+}
+.slider-item .img{
+	height: 45em;  
+	overflow: hidden;   
+}
+.slider-item .content{
+	position: absolute;  
+	padding: 0 10em ;  
+	top: 40%; 
+	left: 0  ; 
+	z-index: 2;  
+}
+.slider-item .content p{
+	font-size: 1.5em;  
+	color: #ffffff;
+	margin-bottom: 1em; 
+}
+.slider-item .content p.title{
+    font-size: 4em;  
+    color: #fff; 
+    background: #3f3f3f75;  
+    font-family: 'Source Code Pro', monospace;
+    animation: slideTitle .5s linear 1;
+    font-weight: 300;  
+    margin-bottom:1em; 
+} 
+
+
+.box-titles{
+	text-align: center;   
+    margin-bottom: 2em;   
+}
+.box-titles h2{
+	font-family: 'Source Code Pro', monospace;
+}
+.box-titles p{
+	font-weight: 300;  
+}
+.section-01{
+	background-image: url("../img/bg_white.jpg");
+	background-size: cover;
+	padding: 5em 0  3em 0 ;  
+}
+.section-01 .content{
+	padding: 2em; 
+}
+.section-01 .content .name{
+	text-transform: uppercase;  
+	font-size: 1.3em;  
+	font-weight: 500;  
+
+}
+.section-01 .content .price{
+	text-transform: uppercase;  
+	font-size: 1.3em;  
+	font-weight: 600;  
+	color: #79cba8;
+}
+.section-01 .content .des{
+	font-size: 1em;
+	color: #A6A29E;     
+}
+.section-01 .content .count-time span{
+	font-size: 3.5em;
+	margin-right: .4em;  
+	color: #D8A800; 
+}
+.section-02{
+	background: url("../img/bg.jpg");
+	background-size: cover;
+	padding: 5em 0 3em 0 ;
+}
+.section-02 .content{
+	padding: 3em 0; 
+}
+.section-02 .content p{
+	color: #fff;  
+}
+.section-02 .content.text-left p{
+	color: #000; 
+}
+.section-02 .content .name{
+	text-transform: uppercase;  
+	font-size: 1.3em;  
+	font-weight: 500
+}
+.section-02 .content .price{
+	text-transform: uppercase;  
+	font-size: 2em;  
+	font-weight: 500; 
+}
+.section-02  img{
+	margin-top: -2em;
+}
+@keyframes slideTitle{
+    from{  opacity: .4;}
+    to{  opacity: 1;}
+}
+
+.section-03{
+	padding:  3em 0 2em 0 ; 
+	background-image: url("../img/bg_white.jpg");
+	background-size: cover; 
+}
+.list-product{
+	display: flex; 
+	justify-content: space-between;  
+}
+.list-product .product{
+	width: 25%;  
+}
+.section-03 .product .post-product{
+	height: 3em;  
+	padding-top: .5em;  
+}
+.section-03 .product p{
+	text-transform: uppercase;  
+	font-size: .9em;
+	font-weight: 400;  
+}
+.section-03 .product .price{
+	font-size: 1.2em; 
+	font-weight: 500;  
+	color:#79cba8;   
+}

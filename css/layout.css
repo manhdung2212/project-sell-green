@@ -74,6 +74,7 @@ header{
 	padding: 3px  16px; 
     position: relative;
     margin-right: 4px;  
+    overflow: hidden;
 }
 .btn-custom-02 span{
 	position: relative; 
@@ -87,11 +88,12 @@ header{
 	position: absolute;  
 	content: "";  
     top:0 ;  
-    left: 0;  
+    left: -2em;  
     height: 100%;
     width: 0; 
     background: #79cba8; 
 	transition: .4s;  
+	transform: skewX(45deg);
 }
 .btn-custom-02:hover span{
 	color: #fff; 
@@ -99,7 +101,7 @@ header{
 	position: relative; 
 }
 .btn-custom-02:hover::before{
-	width:100% ; 
+	width:calc(100% + 3em) ; 
 	 
 }
 .slider-item{

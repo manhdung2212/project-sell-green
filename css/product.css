@@ -14,19 +14,20 @@
     background: #0000003d; 
 }
 .banner .content{
-    position: absolute;  
-    top: 0;  
-    left: 0;  
-    padding: 8em 0 0 8em;  
+    position: relative; 
+    top: 0;
+    left: 0;
+    padding: 8em 0 ;
 }
 .banner .content p{
     font-size: 1.4em;  
     color: #ffffff;  
-    font-weight: 400;  
+    font-weight: 600;  
 }
 .banner .content h2{
     color: #ffffff;  
-    letter-spacing: 2px;
+    font-size: 2.5em;  
+    font-weight: 700; 
 }
 
 .product .img{

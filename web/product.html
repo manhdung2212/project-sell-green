@@ -11,13 +11,14 @@
 	<link rel="stylesheet" href="../css/layout.css">
 	<link rel="stylesheet" href="../css/index.css">
 	<link rel="stylesheet" href="../css/product.css">
+	<link rel="stylesheet" href="../css/productDetail.css">
 </head>
 <body>
 	<div class="background">
-		<img src="https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940d" alt="" class="img-fluid">
+		<img src="https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" class="img-fluid">
 	</div>
 	<header>
-		<div class="menu ">
+		<div class="menu">
 			<div class="container d-flex justify-content-between">
 				<div class="logo">
 					<img src="../img/Laiday Refill Logo-03.webp" alt="">
@@ -30,7 +31,7 @@
 						<li> <a href="#"> Trang chủ</a></li>
 					</ul>
 					<ul>
-						<li> <i class="fas fa-shopping-cart"></i> </li>
+						<li> <i class="fas fa-shopping-cart"></i> <sup class="cart-count">0</sup> </li>
 					</ul>
 				</div>
 
@@ -40,14 +41,12 @@
 		
 	</header>
 	<div class="banner">
-		<div class="container">
-			<div class="img">
+		<div class="content">
+			<div class="container">
+				<h2> Sản phẩm chất lượng, giá cả phải chăng </h2>
+				<p> 1001 sản phẩm </p>
+			</div>
 			
-			</div>
-			<div class="content">
-				<p> Một thứ gì đó</p>
-				<h2> Cùng nhau tạo nên cuộc sống xanh-sạch-đẹp</h2>
-			</div>
 		</div>
 	</div>
 	<div class="box-product ">
@@ -88,7 +87,7 @@
 							</div>
 							<p class="name">Bột giặt thân thiện</p>
 							<div class="tools">
-								<button class="btn-custom-01"> <span>Mua ngay</span>  </button>
+								<button class="btn-custom-01 btn-add-card" data-id="1"> <span>Mua ngay</span>  </button>
 								<button class="btn-custom-02"> <span> Xem chi tiết </span> </button>
 							</div>
 						</div>
@@ -101,7 +100,7 @@
 							</div>
 							<p class="name">Bình thủy tinh refil 10l</p>
 							<div class="tools">
-								<button class="btn-custom-01"> <span>Mua ngay</span>  </button>
+								<button class="btn-custom-01 btn-add-card" data-id="2"> <span>Mua ngay</span>  </button>
 								<button class="btn-custom-02"> <span> Xem chi tiết </span> </button>
 							</div>
 						</div>
@@ -114,7 +113,7 @@
 							</div>
 							<p class="name">Nếp thơm cao cấp</p>
 							<div class="tools">
-								<button class="btn-custom-01"> <span>Mua ngay</span>  </button>
+								<button class="btn-custom-01 btn-add-card" data-id="3"> <span>Mua ngay</span>  </button>
 								<button class="btn-custom-02"> <span> Xem chi tiết </span> </button>
 							</div>
 						</div>
@@ -126,7 +125,7 @@
 							</div>
 							<p class="name">Bột giặt thân thiện</p>
 							<div class="tools">
-								<button class="btn-custom-01"> <span>Mua ngay</span>  </button>
+								<button class="btn-custom-01 btn-add-card" data-id="4"> <span>Mua ngay</span>  </button>
 								<button class="btn-custom-02"> <span> Xem chi tiết </span> </button>
 							</div>
 						</div>
@@ -139,7 +138,7 @@
 							</div>
 							<p class="name">Bình thủy tinh refil 10l</p>
 							<div class="tools">
-								<button class="btn-custom-01"> <span>Mua ngay</span>  </button>
+								<button class="btn-custom-01 btn-add-card" data-id="5"> <span>Mua ngay</span>  </button>
 								<button class="btn-custom-02"> <span> Xem chi tiết </span> </button>
 							</div>
 						</div>
@@ -152,7 +151,7 @@
 							</div>
 							<p class="name">Nếp thơm cao cấp</p>
 							<div class="tools">
-								<button class="btn-custom-01"> <span>Mua ngay</span>  </button>
+								<button class="btn-custom-01 btn-add-card" data-id="6"> <span>Mua ngay</span>  </button>
 								<button class="btn-custom-02"> <span> Xem chi tiết </span> </button>
 							</div>
 						</div>
@@ -176,28 +175,24 @@
 			<p class="text-sale"> Chúng tôi luôn ưu tiên mang đến những điều tốt đẹp nhất cho quý khách,Chúng tôi luôn ưu tiên mang đến những điều tốt đẹp nhất cho quý khách </p>
 			<div class="timer">
 				<div>
-					<p class="number"> 24 </p>
+					<p class="number week"> 24 </p>
 					<p> weeks </p>
 				</div>
 				<div>
-					<p class="number"> 24 </p>
-					<p> weeks </p>
+					<p class="number day"> 24 </p>
+					<p> day </p>
 				</div>
 				<div>
-					<p class="number"> 24 </p>
-					<p> weeks </p>
+					<p class="number hour"> 24 </p>
+					<p> hour </p>
 				</div>
 				<div>
-					<p class="number"> 24 </p>
-					<p> weeks </p>
+					<p class="number minute"> 24 </p>
+					<p> minutes </p>
 				</div>
 				<div>
-					<p class="number"> 24 </p>
-					<p> weeks </p>
-				</div>
-				<div>
-					<p class="number"> 24 </p>
-					<p> weeks </p>
+					<p class="number second"> 24 </p>
+					<p> second </p>
 				</div>
 			</div>
 			<button> Xem nhanh</button>
@@ -338,7 +333,40 @@
 			<p> Coppy right <strong> Nhậu Nhóm team </strong>  April, 22, 2020</p>
 		</div>
 	</footer>
+	<div class="cart-box">
+		<div class="box-left">
+			<h2> Giỏ hàng của bạn</h2>
+
+			<div class="product-in-cart">
+				<div class="product">
+					<div class="img">
+						<img src="https://static.wixstatic.com/media/c57a90_38d2f428874945b3b1cf339936e66660~mv2.jpg/v1/fill/w_370,h_370,al_c,q_80,usm_0.66_1.00_0.01/c57a90_38d2f428874945b3b1cf339936e66660~mv2.webp" alt="">
+					</div>
+					<div class="content">
+						<div class="info">
+							<p class="product-name">  Hộp đồ gỗ </p>
+							<p class="price"> <span class="old"> 900.00Đ</span> 400.000đ</p>
+							<p class="text-uppercase"> Số lượng</p>
+							<div class="form-group d-flex quantity">
+								
+								<button class="minus"><i class="fas fa-minus"></i> </button>
+								<input type="number" name="quantity" value="1">
+								<button class="plus"> <i class="fas fa-plus"></i></button>
+							</div>
+						</div>
+					</div>
+					<button class="delete"><i class="fas fa-times"></i></button>
+				</div>
+			</div>
+			<p class="detailsCart-link"> <a href="#"> Xem chi tiết giỏ hàng </a></p>
+			
+		</div>
+		
+		
+	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-	<script src="../js/slider.js"></script>
+	<script src="../js/layout.js"> </script>
+	<script  src="../js/product.js"></script>
+	<script src="../js/cart.js"></script>
 </body>
 </html>

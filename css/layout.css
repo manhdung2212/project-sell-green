@@ -264,16 +264,25 @@ header{
 	width: 26%;  
 	margin-bottom: 4em;  
 }
-.section-03 .product .post-product{
+.list-products{
+	display: flex; 
+	flex-wrap: wrap;  
+	justify-content: space-between;  
+}
+.list-products .product-item{
+	width: 26%;  
+	margin-bottom: 4em;  
+}
+.section-03 .product-item .post-product{
 	height: 3em;  
 	padding-top: .5em;  
 }
-.section-03 .product p{
+.section-03 .product-item p{
 	text-transform: uppercase;  
 	font-size: .9em;
 	font-weight: 400;  
 }
-.section-03 .product .price{
+.section-03 .product-item .price{
 	font-size: 1.2em; 
 	font-weight: 500;  
 	color:#79cba8;   

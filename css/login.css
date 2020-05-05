@@ -74,3 +74,15 @@ body{
     text-decoration: none;  
 
 }
+
+.signUp-form{
+    max-width: 600px; 
+}
+.signUp-form .form-group{
+    width: calc(50% - 1em);  
+}
+.signUp-form .login{
+    display: flex;  
+    flex-wrap: wrap;  
+    justify-content: space-between
+}
